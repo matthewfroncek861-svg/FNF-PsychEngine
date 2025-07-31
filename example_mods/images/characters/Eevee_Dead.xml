@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Eevee_Dead.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="dies0000" x="930" y="0" width="905" height="923" frameX="2" frameY="2" frameWidth="901" frameHeight="919"/>
+	<SubTexture name="dead confirm0000" x="0" y="0" width="930" height="1301" frameX="2" frameY="2" frameWidth="926" frameHeight="1297"/>
+</TextureAtlas>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="front-bopers.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="peoplefront0000" x="10" y="10" width="457" height="404" frameX="0" frameY="-2" frameWidth="457" frameHeight="406"/>
+	<SubTexture name="peoplefront0001" x="10" y="10" width="457" height="404" frameX="0" frameY="-2" frameWidth="457" frameHeight="406"/>
+	<SubTexture name="peoplefront0002" x="477" y="10" width="456" height="406" frameX="0" frameY="0" frameWidth="457" frameHeight="406"/>
+	<SubTexture name="peoplefront0003" x="477" y="10" width="456" height="406" frameX="0" frameY="0" frameWidth="457" frameHeight="406"/>
+	<SubTexture name="peoplefront0004" x="10" y="426" width="454" height="406" frameX="-1" frameY="0" frameWidth="457" frameHeight="406"/>
+	<SubTexture name="peoplefront0005" x="10" y="426" width="454" height="406" frameX="-1" frameY="0" frameWidth="457" frameHeight="406"/>
+	<SubTexture name="peoplefront0006" x="474" y="426" width="453" height="405" frameX="-2" frameY="-1" frameWidth="457" frameHeight="406"/>
+	<SubTexture name="peoplefront0007" x="474" y="426" width="453" height="405" frameX="-2" frameY="-1" frameWidth="457" frameHeight="406"/>
+	<SubTexture name="peoplefront0008" x="474" y="426" width="453" height="405" frameX="-2" frameY="-1" frameWidth="457" frameHeight="406"/>
+	<SubTexture name="peoplefront0009" x="474" y="426" width="453" height="405" frameX="-2" frameY="-1" frameWidth="457" frameHeight="406"/>
+	<SubTexture name="peoplefront0010" x="474" y="426" width="453" height="405" frameX="-2" frameY="-1" frameWidth="457" frameHeight="406"/>
+	<SubTexture name="peoplefront0011" x="474" y="426" width="453" height="405" frameX="-2" frameY="-1" frameWidth="457" frameHeight="406"/>
+	<SubTexture name="peoplefront0012" x="474" y="426" width="453" height="405" frameX="-2" frameY="-1" frameWidth="457" frameHeight="406"/>
+	<SubTexture name="peoplefront0013" x="474" y="426" width="453" height="405" frameX="-2" frameY="-1" frameWidth="457" frameHeight="406"/>
+	<SubTexture name="peoplefront0014" x="474" y="426" width="453" height="405" frameX="-2" frameY="-1" frameWidth="457" frameHeight="406"/>
+</TextureAtlas>

@@ -1,0 +1,3 @@
+the-idea:P1RonaldMenu
+combo-meal:P2RonaldMenu
+deaf-to-all-but-the-ronald:TouhouMenu

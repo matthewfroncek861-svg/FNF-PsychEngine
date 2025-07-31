@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="back-bopers.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="mcworkers0000" x="10" y="10" width="891" height="404" frameX="0" frameY="-5" frameWidth="891" frameHeight="409"/>
+	<SubTexture name="mcworkers0001" x="10" y="10" width="891" height="404" frameX="0" frameY="-5" frameWidth="891" frameHeight="409"/>
+	<SubTexture name="mcworkers0002" x="911" y="10" width="891" height="406" frameX="0" frameY="-3" frameWidth="891" frameHeight="409"/>
+	<SubTexture name="mcworkers0003" x="911" y="10" width="891" height="406" frameX="0" frameY="-3" frameWidth="891" frameHeight="409"/>
+	<SubTexture name="mcworkers0004" x="10" y="426" width="891" height="408" frameX="0" frameY="-1" frameWidth="891" frameHeight="409"/>
+	<SubTexture name="mcworkers0005" x="10" y="426" width="891" height="408" frameX="0" frameY="-1" frameWidth="891" frameHeight="409"/>
+	<SubTexture name="mcworkers0006" x="911" y="426" width="891" height="409"/>
+	<SubTexture name="mcworkers0007" x="911" y="426" width="891" height="409"/>
+	<SubTexture name="mcworkers0008" x="911" y="426" width="891" height="409"/>
+	<SubTexture name="mcworkers0009" x="911" y="426" width="891" height="409"/>
+	<SubTexture name="mcworkers0010" x="911" y="426" width="891" height="409"/>
+	<SubTexture name="mcworkers0011" x="911" y="426" width="891" height="409"/>
+	<SubTexture name="mcworkers0012" x="911" y="426" width="891" height="409"/>
+	<SubTexture name="mcworkers0013" x="911" y="426" width="891" height="409"/>
+	<SubTexture name="mcworkers0014" x="911" y="426" width="891" height="409"/>
+</TextureAtlas>

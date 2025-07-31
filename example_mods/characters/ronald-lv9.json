@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				40,
+				10
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "RonLv9 idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				340,
+				-170
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "RonLv9 left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				43,
+				-351
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "RonLv9 down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-160,
+				51
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "RonLv9 up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-170,
+				-360
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "RonLv9 right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-90,
+				107
+			],
+			"anim": "laugh",
+			"fps": 24,
+			"name": "RonLv9 laugh",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				40,
+				-160
+			],
+			"anim": "breakfast",
+			"fps": 24,
+			"name": "RonLv9 breakfast",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/RonLV9",
+	"position": [
+		-180,
+		-380
+	],
+	"healthicon": "ronald",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		0,
+		0
+	],
+	"camera_position": [
+		-30,
+		110
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

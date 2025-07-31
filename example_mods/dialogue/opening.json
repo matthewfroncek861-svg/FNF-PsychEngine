@@ -1,0 +1,68 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "Now why would you want to go to Burger King, dear sonny?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "There's a McDonalds with great options right here."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "Beep bop pa boo bep"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "So what if their nuggets are cheaper? Doesn't mean they're as deliciously scrumptious."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "Bop skdoo beep"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "Now, now… let's not make any mistakes."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "Here… Gimme a chance to convince ya to eat here!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "sus",
+			"text": "….."
+		}
+	]
+}

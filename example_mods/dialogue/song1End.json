@@ -1,0 +1,160 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "creepy",
+			"text": "Nrghh… Why you…"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "creepy",
+			"text": "..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "Ohoho… So that's how it is?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "Let me clarify something…"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "When I said not to make any mistakes…"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "I wasn't talking about not eating here."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "creepy",
+			"text": "I was talking about ticking me off."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "creepy",
+			"text": "Because I don't think you realize who you're insulting…"
+		},		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "sus",
+			"text": "…So you really aren't just a mascot?"
+		},		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "cocky",
+			"text": "I'm more of a “fighter” nowadays, if you catch my drift."
+		},		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "fear",
+			"text": "H-Hold up, you're that cheap fighting character one?!"
+		},		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "cocky",
+			"text": "Ah, so you have heard of me!"
+		},		
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "cocky",
+			"text": "And how flattering of you to finally speak words..."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "creepy",
+			"text": "So, if you don't want to be left broken beyond repair like the ice cream machine…"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "I suggest you RECONSIDER your options."
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "worry",
+			"text": "Psh… You don't scare me…"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "I've dealt with much worse!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "cheer",
+			"text": "You got this, hun!"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "cheer",
+			"text": "Been dying for another good show~"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "ron",
+			"boxState": "normal",
+			"expression": "cocky",
+			"text": "Ha! Then let's see how long that confidence lasts…"
+		}
+	]
+}

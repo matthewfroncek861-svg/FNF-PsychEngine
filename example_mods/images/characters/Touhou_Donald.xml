@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Touhou_Donald.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="TD down0000" x="0" y="0" width="665" height="771"/>
+	<SubTexture name="TD down0001" x="0" y="0" width="665" height="771"/>
+	<SubTexture name="TD down0002" x="665" y="0" width="665" height="771"/>
+	<SubTexture name="TD down0003" x="665" y="0" width="665" height="771"/>
+	<SubTexture name="TD down0004" x="1330" y="0" width="665" height="771"/>
+	<SubTexture name="TD down0005" x="1330" y="0" width="665" height="771"/>
+	<SubTexture name="TD down0006" x="1995" y="0" width="665" height="771"/>
+	<SubTexture name="TD down0007" x="2660" y="0" width="665" height="771"/>
+	<SubTexture name="TD idle0000" x="3325" y="0" width="1257" height="919"/>
+	<SubTexture name="TD idle0001" x="3325" y="0" width="1257" height="919"/>
+	<SubTexture name="TD idle0002" x="4582" y="0" width="1257" height="919"/>
+	<SubTexture name="TD idle0003" x="4582" y="0" width="1257" height="919"/>
+	<SubTexture name="TD idle0004" x="5839" y="0" width="1257" height="919"/>
+	<SubTexture name="TD idle0005" x="5839" y="0" width="1257" height="919"/>
+	<SubTexture name="TD idle0006" x="0" y="919" width="1257" height="919"/>
+	<SubTexture name="TD idle0007" x="0" y="919" width="1257" height="919"/>
+	<SubTexture name="TD idle0008" x="1257" y="919" width="1257" height="919"/>
+	<SubTexture name="TD idle0009" x="1257" y="919" width="1257" height="919"/>
+	<SubTexture name="TD idle0010" x="1257" y="919" width="1257" height="919"/>
+	<SubTexture name="TD idle0011" x="1257" y="919" width="1257" height="919"/>
+	<SubTexture name="TD left0000" x="2514" y="919" width="1082" height="787"/>
+	<SubTexture name="TD left0001" x="2514" y="919" width="1082" height="787"/>
+	<SubTexture name="TD left0002" x="3596" y="919" width="1082" height="787"/>
+	<SubTexture name="TD left0003" x="3596" y="919" width="1082" height="787"/>
+	<SubTexture name="TD left0004" x="4678" y="919" width="1082" height="787"/>
+	<SubTexture name="TD left0005" x="4678" y="919" width="1082" height="787"/>
+	<SubTexture name="TD left0006" x="5760" y="919" width="1082" height="787"/>
+	<SubTexture name="TD left0007" x="6842" y="919" width="1082" height="787"/>
+	<SubTexture name="TD right0000" x="0" y="1838" width="1145" height="929"/>
+	<SubTexture name="TD right0001" x="0" y="1838" width="1145" height="929"/>
+	<SubTexture name="TD right0002" x="1145" y="1838" width="1145" height="929"/>
+	<SubTexture name="TD right0003" x="1145" y="1838" width="1145" height="929"/>
+	<SubTexture name="TD right0004" x="2290" y="1838" width="1145" height="929"/>
+	<SubTexture name="TD right0005" x="2290" y="1838" width="1145" height="929"/>
+	<SubTexture name="TD right0006" x="3435" y="1838" width="1145" height="929"/>
+	<SubTexture name="TD right0007" x="4580" y="1838" width="1145" height="929"/>
+	<SubTexture name="TD up0000" x="5725" y="1838" width="1250" height="1209"/>
+	<SubTexture name="TD up0001" x="5725" y="1838" width="1250" height="1209"/>
+	<SubTexture name="TD up0002" x="0" y="3047" width="1250" height="1209"/>
+	<SubTexture name="TD up0003" x="0" y="3047" width="1250" height="1209"/>
+	<SubTexture name="TD up0004" x="1250" y="3047" width="1250" height="1209"/>
+	<SubTexture name="TD up0005" x="2500" y="3047" width="1250" height="1209"/>
+	<SubTexture name="TD up0006" x="3750" y="3047" width="1250" height="1209"/>
+	<SubTexture name="TD up0007" x="5000" y="3047" width="1250" height="1209"/>
+</TextureAtlas>

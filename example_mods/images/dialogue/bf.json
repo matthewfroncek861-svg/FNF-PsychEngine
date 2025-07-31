@@ -1,0 +1,63 @@
+{
+	"dialogue_pos": "right",
+	"position": [
+		-280,
+		-250
+	],
+	"scale": 0.549999999999999,
+	"animations": [
+		{
+			"anim": "talk",
+			"loop_offsets": [
+				0,
+				-3
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "bf happy",
+			"idle_name": "bf happy"
+		},
+		{
+			"loop_name": "bf worry",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "bf worry",
+			"anim": "worry",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "bf happy",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "bf happy",
+			"anim": "happy",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "bf fear",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "bf fear",
+			"anim": "fear",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	],
+	"image": "talk_portraits"
+}

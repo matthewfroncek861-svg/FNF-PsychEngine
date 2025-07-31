@@ -1,0 +1,37 @@
+{
+	"dialogue_pos": "center",
+	"position": [
+		-220,
+		-300
+	],
+	"scale": 0.549999999999999,
+	"animations": [
+		{
+			"loop_name": "gf cheer",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "gf cheer",
+			"anim": "cheer",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "gf sus",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "gf sus",
+			"anim": "sus",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	],
+	"image": "talk_portraits"
+}

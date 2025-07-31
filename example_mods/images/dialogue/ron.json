@@ -1,0 +1,63 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		-220,
+		-300
+	],
+	"scale": 0.549999999999999,
+	"animations": [
+		{
+			"anim": "talk",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "ron happy",
+			"idle_name": "ron happy"
+		},
+		{
+			"loop_name": "ron happy",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "ron happy",
+			"anim": "happy",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "ron cocky",
+			"idle_offsets": [
+				-100,
+				0
+			],
+			"idle_name": "ron cocky",
+			"anim": "cocky",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "ron creepy",
+			"idle_offsets": [
+				-60,
+				20
+			],
+			"idle_name": "ron creepy",
+			"anim": "creepy",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	],
+	"image": "talk_portraits"
+}
