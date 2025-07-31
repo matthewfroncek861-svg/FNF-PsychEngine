@@ -236,7 +236,7 @@ class VisualsSettingsSubState extends BaseOptionsMenu
 
 	function changeSauceNoteSkin(note:StrumNote)
 	{
-		var skin:String = Note.defaultSauceNoteSkin‎;
+		var skin:String = Note.defaultSauceNoteSkin;
 		var customSkin:String = skin + Note.getNoteSkinPostfix();
 		if(Paths.fileExists('images/$customSkin.png', IMAGE)) skin = customSkin;
 
