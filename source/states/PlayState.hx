@@ -530,7 +530,6 @@ class PlayState extends MusicBeatState
 		moveCameraSection();
 
 		healthBarBG = new AttachedSprite('coolhealthborder');
-		healthBarBG.y = FlxG.height * 0.85;
 		healthBarBG.screenCenter(X);
 		healthBarBG.scrollFactor.set();
 		healthBarBG.xAdd = -25;
@@ -539,10 +538,6 @@ class PlayState extends MusicBeatState
 
 		healthBar = new Bar(0, FlxG.height * (!ClientPrefs.data.downScroll ? 0.89 : 0.11), 'coolhealthbar', function() return health, 0, 2);
 		healthBar.screenCenter(X);
-		healthBar.x = FlxG.height * 0.85;
-		healthBar.y = FlxG.height * 0.85;
-		healthBar.x = FlxG.width * 0.85;
-		healthBar.y = FlxG.width * 0.85;
 		healthBar.leftToRight = false;
 		healthBar.scrollFactor.set();
 		healthBar.visible = !ClientPrefs.data.hideHud;
