@@ -1,159 +1,221 @@
 {
 	"animations": [
 		{
-			"offsets": [-3, 5],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				-3,
+				5
+			],
 			"anim": "hey",
-			"indices": [],
-			"name": "BF HEY"
+			"fps": 24,
+			"name": "BF HEY",
+			"indices": []
 		},
 		{
-			"offsets": [14, 18],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				14,
+				18
+			],
 			"anim": "hurt",
-			"indices": [],
-			"name": "BF hit"
+			"fps": 24,
+			"name": "BF hit",
+			"indices": []
 		},
 		{
-			"offsets": [-4, 0],
 			"loop": true,
-			"fps": 24,
+			"offsets": [
+				-4,
+				0
+			],
 			"anim": "scared",
-			"indices": [],
-			"name": "BF idle shaking"
+			"fps": 24,
+			"name": "BF idle shaking",
+			"indices": []
 		},
 		{
-			"offsets": [37, 11],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				37,
+				11
+			],
 			"anim": "firstDeath",
-			"indices": [],
-			"name": "BF dies"
+			"fps": 24,
+			"name": "BF dies",
+			"indices": []
 		},
 		{
-			"offsets": [37, 5],
 			"loop": true,
-			"fps": 24,
+			"offsets": [
+				37,
+				5
+			],
 			"anim": "deathLoop",
-			"indices": [],
-			"name": "BF Dead Loop"
+			"fps": 24,
+			"name": "BF Dead Loop",
+			"indices": []
 		},
 		{
-			"offsets": [37, 69],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				37,
+				69
+			],
 			"anim": "deathConfirm",
-			"indices": [],
-			"name": "BF Dead confirm"
+			"fps": 24,
+			"name": "BF Dead confirm",
+			"indices": []
 		},
 		{
-			"offsets": [-10, -16],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				-10,
+				-16
+			],
 			"anim": "dodge",
-			"indices": [],
-			"name": "boyfriend dodge"
+			"fps": 24,
+			"name": "boyfriend dodge",
+			"indices": []
 		},
 		{
-			"offsets": [294, 267],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				294,
+				267
+			],
 			"anim": "attack",
-			"indices": [],
-			"name": "boyfriend attack"
+			"fps": 24,
+			"name": "boyfriend attack",
+			"indices": []
 		},
 		{
-			"offsets": [-20, -30],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				-20,
+				-30
+			],
 			"anim": "pre-attack",
-			"indices": [],
-			"name": "bf pre attack"
+			"fps": 24,
+			"name": "bf pre attack",
+			"indices": []
 		},
 		{
-			"offsets": [45, 10],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				45,
+				10
+			],
 			"anim": "idle",
-			"indices": [],
-			"name": "TBF idle"
+			"fps": 24,
+			"name": "TBF idle",
+			"indices": []
 		},
 		{
-			"offsets": [65, 4],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				65,
+				4
+			],
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "TBF left"
+			"fps": 24,
+			"name": "TBF left",
+			"indices": []
 		},
 		{
-			"offsets": [37, -7],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				37,
+				-7
+			],
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "TBF down"
+			"fps": 24,
+			"name": "TBF down",
+			"indices": []
 		},
 		{
-			"offsets": [64, 67],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				64,
+				67
+			],
 			"anim": "singUP",
-			"indices": [],
-			"name": "TBF up"
+			"fps": 24,
+			"name": "TBF up",
+			"indices": []
 		},
 		{
-			"offsets": [22, 3],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				22,
+				3
+			],
 			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "TBF right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				107,
+				59
+			],
 			"indices": [],
-			"name": "TBF right"
-		},
-		{
-			"loop": false,
-			"offsets": [107, 59],
+			"fps": 24,
 			"anim": "singLEFTmiss",
-			"fps": 24,
-			"name": "TBF L miss",
-			"indices": []
+			"loop": false,
+			"name": "TBF L miss"
 		},
 		{
-			"loop": false,
-			"offsets": [45, 51],
+			"offsets": [
+				45,
+				51
+			],
+			"indices": [],
+			"fps": 24,
 			"anim": "singDOWNmiss",
-			"fps": 24,
-			"name": "TBF D miss",
-			"indices": []
+			"loop": false,
+			"name": "TBF D miss"
 		},
 		{
-			"loop": false,
-			"offsets": [54, 147],
+			"offsets": [
+				54,
+				147
+			],
+			"indices": [],
+			"fps": 24,
 			"anim": "singUPmiss",
-			"fps": 24,
-			"name": "TBF U miss",
-			"indices": []
+			"loop": false,
+			"name": "TBF U miss"
 		},
 		{
-			"loop": false,
-			"offsets": [46, 92],
-			"anim": "singRIGHTmiss",
+			"offsets": [
+				46,
+				92
+			],
+			"indices": [],
 			"fps": 24,
-			"name": "TBF R miss",
-			"indices": []
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "TBF R miss"
 		}
 	],
-	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/Touhou_BF",
-	"position": [-300, 350],
+	"position": [
+		-300,
+		350
+	],
 	"healthicon": "bf",
 	"flip_x": true,
-	"healthbar_colors": [42, 147, 226],
-	"camera_position": [-300, 0],
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		-300,
+		0
+	],
 	"sing_duration": 4,
-	"scale": 1,
-	"_editor_isPlayer": false
+	"scale": 1
 }
