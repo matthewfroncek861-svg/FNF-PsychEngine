@@ -255,11 +255,10 @@ class TitleState extends MusicBeatState
 						bg.antialiasing = ClientPrefs.data.antialiasing;
 						add(bg);
 					}
+					}
 				}
 			}
-			else trace('[WARN] No Title JSON detected, using default values.');
 		}
-		//else trace('[WARN] No Title JSON detected, using default values.');
 	}
 
 	function easterEggData()
