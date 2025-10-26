@@ -1,207 +1,262 @@
-local phase2 = false
-local phase1 = false
+
+
+
+
 function onCreate()
-	phase1 = songName == 'The Idea' or songName == 'The Idea Minus' or songName == 'Silence is Death'
-	phase2 = songName == 'Combo Meal' or songName == 'Combo Meal Erect'
-	--main thing
+    --addLuaScript('SimpleModchartTemplate') -- load the script
+    --triggerEvent('legacyPsychMode') 
 
-      if songName == 'Silence is Death' then
-      else
-        makeAnimatedLuaSprite('inuko','ronald/inuko-boper', 330, 740);
-	addAnimationByPrefix('inuko','bop','xo window',24,false)
-	scaleObject('inuko', 1.47, 1.47);
-	addLuaSprite('inuko',false);
-      end
-
-	makeAnimatedLuaSprite('theWall','ronald/wall', -80, 0);
-	addAnimationByPrefix('theWall','bop','Símbolo 12 instancia 1',24,false)
-	
-	scaleObject('theWall', 1.47, 1.47);
-	addLuaSprite('theWall',false);
-
-	--makeLuaSprite('theGround','ronald/floor',-0 , 1470);
-	--addLuaSprite('theGround',false);
-	--scaleObject('theGround', 2, 2);
-
-	if phase1 and not lowQuality then
-		makeAnimatedLuaSprite('theBackBops','ronald/phase1/back-bopers', 710, 850);
-	    addAnimationByPrefix('theBackBops','bop','mcworkers',24,false)
-	    addLuaSprite('theBackBops',false);
-	    scaleObject('theBackBops', 1.8, 1.8);
-
-	    makeAnimatedLuaSprite('theMidBops','ronald/phase1/mid-bopers', 380, 770);
- 	    addAnimationByPrefix('theMidBops','bop','peopleback',24,false)
-	    addLuaSprite('theMidBops',false);
-	    scaleObject('theMidBops', 2.3, 2.3);
-	    setLuaSpriteScrollFactor('theMidBops',0.98 , 0.98);
-
-	    makeAnimatedLuaSprite('theFrontBops','ronald/phase1/front-bopers', -450, 910);
-	    addAnimationByPrefix('theFrontBops','bop','peoplefront',24,false)
-	    addLuaSprite('theFrontBops',true);
-	    scaleObject('theFrontBops', 2.6, 2.6);
-		setLuaSpriteScrollFactor('theFrontBops',0.84 , 0.84);
-
-		makeAnimatedLuaSprite('theFrontBops2','ronald/phase1/front-bopers', -1450, 910); --theres actually 2 lol, because the gap was too big in between
-	    addAnimationByPrefix('theFrontBops2','bop','peoplefront',24,false)
-	    addLuaSprite('theFrontBops2',true);
-	    scaleObject('theFrontBops2', 2.6, 2.6);
-		setLuaSpriteScrollFactor('theFrontBops2',0.84 , 0.84);
-
-	end
-
-	
-	
-
-	if phase2 and not lowQuality then
-		makeAnimatedLuaSprite('theBackBops','ronald/2phase/back-bopers', 710, 810);
-	    addAnimationByPrefix('theBackBops','bop','mcworkers',24,false)
-	    addLuaSprite('theBackBops',false);
-	    scaleObject('theBackBops', 1.8, 1.8);
-
-	    makeAnimatedLuaSprite('theMidBops','ronald/2phase/mid-bopers', 200, 820);
- 	    addAnimationByPrefix('theMidBops','bop','peopleback',24,false)
-	    addLuaSprite('theMidBops',false);
-	    scaleObject('theMidBops', 2, 2);
-	    setLuaSpriteScrollFactor('theMidBops',0.98 , 0.98);
-
-	    makeAnimatedLuaSprite('theFrontBops','ronald/2phase/front-bopers', 1850, 1000);
-	    addAnimationByPrefix('theFrontBops','bop','peoplefront',24,false)
-	    addLuaSprite('theFrontBops',true);
-	    scaleObject('theFrontBops', 2.6, 2.6);
-	    setLuaSpriteScrollFactor('theFrontBops',0.84 , 0.84);
-
-		makeAnimatedLuaSprite('shag','ronald/2phase/shaggy-boper', -230, 970);
-	    addAnimationByPrefix('shag','bop','shaggy',24,false)
-	    addLuaSprite('shag',true);
-	    scaleObject('shag', 2.6, 2.6);
-	    setLuaSpriteScrollFactor('shag',0.84 , 0.84);
-
-		addHaxeLibrary('ColorSwap', 'shaders')
-		runHaxeCode([[
-			var colorSwap = new ColorSwap();
-			var colorSwapDarker = new ColorSwap();
-			game.variables['desaturation'] = colorSwap;
-			game.variables['desaturationDarker'] = colorSwapDarker;
-			game.modchartSprites.get("theMidBops").shader = colorSwapDarker.shader;
-			game.modchartSprites.get("theFrontBops").shader = colorSwap.shader;
-			game.modchartSprites.get("theBackBops").shader = colorSwapDarker.shader;
-			game.modchartSprites.get("theWall").shader = colorSwap.shader;
-			//colorSwap.saturation = -0.45;
-			//colorSwap.brightness = -0.4;
-			//colorSwapDarker.saturation = -0.45;
-			//colorSwapDarker.brightness = -0.47;
-		]])
-
-
-		--[[makeAnimatedLuaSprite('theWallFrozen','ronald/2phase/frozen/wall', 0, 0);
-		addAnimationByPrefix('theWallFrozen','bop','Símbolo 12 instancia 1',24,false)
-		addLuaSprite('theWallFrozen',false);
-		scaleObject('theWallFrozen', 1, 1);
-	
-		makeLuaSprite('theGroundFrozen','ronald/2phase/frozen/floor',0 , 0);
-		addLuaSprite('theGroundFrozen',false);
-		scaleObject('theGroundFrozen', 1, 1);
-	
-		makeAnimatedLuaSprite('theBackBopsFrozen','ronald/2phase/frozen/back-bopers', 710, 848);
-		addAnimationByPrefix('theBackBopsFrozen','bop','Símbolo 15 instancia 1',24,false)
-		addLuaSprite('theBackBopsFrozen',false);
-		scaleObject('theBackBopsFrozen', 1, 1);
-	
-		makeAnimatedLuaSprite('theMidBopsFrozen','ronald/2phase/frozen/mid-bopers', 100, 800);
-		addAnimationByPrefix('theMidBopsFrozen','bop','peopleback',24,false)
-		addLuaSprite('theMidBopsFrozen',false);
-		scaleObject('theMidBopsFrozen', 1, 1);
-		setLuaSpriteScrollFactor('theMidBopsFrozen',0.98 , 0.98);
-	
-		makeAnimatedLuaSprite('theFrontBopsFrozen','ronald/2phase/frozen/front-bopers', -310, 950);
-		addAnimationByPrefix('theFrontBopsFrozen','bop','peoplefront instancia 1',24,false)
-		addLuaSprite('theFrontBopsFrozen',true);
-		scaleObject('theFrontBopsFrozen', 1, 1);
-		setLuaSpriteScrollFactor('theFrontBopsFrozen',0.84 , 0.84);
-	
-		makeLuaSprite('thePostersFrozen','ronald/2phase/frozen/posters',-400 , 200);
-		addLuaSprite('thePostersFrozen',false);
-		scaleObject('thePostersFrozen', 1, 1);
-	
-		setProperty('theWallFrozen.alpha', 0)
-		setProperty('theGroundFrozen.alpha', 0)
-		setProperty('theBackBopsFrozen.alpha', 0)
-		setProperty('theMidBopsFrozen.alpha', 0)
-		setProperty('theFrontBopsFrozen.alpha', 0)
-		setProperty('thePostersFrozen.alpha', 0)]]--
-	end
-
-	--makeLuaSprite('thePosters','ronald/posters',-400 , 200);
-	--addLuaSprite('thePosters',false);
-	--scaleObject('thePosters', 2, 2);
-
-
-
-	
 
 end
+
+local scrollSwitch = 520 --can be useful for when changing y values to work with both scrolls
+--example, want to move note y to center of the screen, use the value scrollSwitch/2 and it should work both upscroll and downscroll 
 function onCreatePost()
-	--setProperty('gf.visible', false)
+    if downscroll then 
+		scrollSwitch = -520
+	end
+
+    --setProperty('incomingAngle.x', 90)
+
+    --setProperty('playerNotePathAlpha.alpha', 0.75)
+    if getPropertyFromClass('ClientPrefs', 'modcharts') then 
+        runHaxeCode([[
+            game.playfieldRenderer = new PlayfieldRenderer(game.strumLineNotes, game.notes, game);
+            game.playfieldRenderer.cameras = [game.camHUD];
+            game.add(game.playfieldRenderer);
+            game.remove(game.grpNoteSplashes);
+            game.add(game.grpNoteSplashes);
+        ]])
+
+        removeLuaSprite('theLimit', false)
+        removeLuaText('limitCounter', false)
+        addLuaSprite('theLimit',true);
+        addLuaText('limitCounter');
+    end
+
+
 end
+
+function onSongStart()--for step 0
+    --introBuzz()
+    --triggerEvent('setTimeStop', '54180', '93500')
+
+   
+end
+
+local mainMelody = {0, 4,6,8,12, 16, 20, 22, 24, 28, 32, 36, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62}
+local longNotes = {0,8,12,16,24,28,32,40}
+
+local woap = {192,704, 960, 1216, 1600, 1856}
+
+local startMoveThing = 0
+local waveThing = 0
+
+local sectionsToNotDoMelodyThing = {0,1,2,3,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,58,59,92,93,94,95,96,97,98,99,132,133,134,135,136,137,138,139,147,148,149,150}
+local swapThing = 1
 
 function onStepHit()
-	--setProperty('camGame.zoom', 0.2)
-	if curStep % 8 == 4 then
-		objectPlayAnimation('inuko', 'bop', true)
+    --[[
+    local doMelodyThing = true
+    for i = 0,#sectionsToNotDoMelodyThing-1 do 
+        if math.floor(curStep/16) == sectionsToNotDoMelodyThing[i+1] then 
+            doMelodyThing = false
+        end
+    end
+    if doMelodyThing then 
+        for i = 0,#mainMelody-1 do --reads a list of steps from the array
+            if curStep % 64 == mainMelody[i+1] then 
+                local played = false
+                for j = 0,#longNotes-1 do 
+                    if curStep % 64 == longNotes[j+1] then
+                        setProperty('tipsy.y', 0.5)
+                        doTweenY('tipsy', 'tipsy', 0, stepCrochet/500, 'backInOut')
+                        swapThing = swapThing * -1
+                        played = true
+                    end
+                end
+    
+                if curStep % 64 >= 48 then 
+                    setProperty('strumOffset'..waveThing..'.y', -20)
+                    setProperty('strumOffset'..(waveThing+4)..'.y', -20)
+                    if waveThing == 0 then 
+                        setProperty('strumOffset'..(3)..'.y', 0)
+                        setProperty('strumOffset'..(7)..'.y', 0)
+                    else 
+                        setProperty('strumOffset'..(waveThing-1)..'.y', 0)
+                        setProperty('strumOffset'..(waveThing-1+4)..'.y', 0)
+                    end
+                    played = true
+                    waveThing = (waveThing + 1) % 4
+                end
+                if not played then 
+                    setProperty('scale.x', 1)
+                    doTweenX('scaleX', 'scale', 0.7, stepCrochet/500, 'backInOut')       
+                end
+                --0triggerEvent('Add Camera Zoom', 0.005, 0.005)
+            end
+        end
+    end
+    
+    if curStep % 64 == 0 then 
+        for j = 0,7 do 
+            setProperty('strumOffset'..j..'.y', 0)
+        end
+    end
 
-		if (phase2 or phase1) and not lowQuality then 
-			if not frozen then 
-				objectPlayAnimation('theMidBops', 'bop', true)
-				objectPlayAnimation('theFrontBops', 'bop', true)
-				objectPlayAnimation('theBackBops', 'bop', true)
-				if phase1 then 
-					objectPlayAnimation('theFrontBops2', 'bop', true)
-				end
-			end
-			objectPlayAnimation('shag', 'bop', true)
-		end
-	end
+
+    introBuzz()
+
+
+    if curStep == 192 then 
+        for i = 0,7 do 
+            doTweenAngle('strumOffset'..i, 'strumOffset'..i, 0, (stepCrochet/1000)*3, 'cubeInOut')
+            doTweenAngle('confusion'..i, 'confusion'..i, 0, (stepCrochet/1000)*3, 'cubeInOut')
+        end
+    elseif curStep == 704 then 
+        doTweenAngle('globalStrumOffset', 'globalStrumOffset', -200, (stepCrochet/1000)*3, 'cubeInOut') 
+    elseif curStep == 960 then 
+        doTweenAngle('globalStrumOffset', 'globalStrumOffset', 0, (stepCrochet/1000)*3, 'cubeInOut') 
+
+    elseif curStep == 832 then 
+        doTweenX('speen', 'noteRot', 180, (stepCrochet/1000)*6, 'cubeInOut')
+        local time = (stepCrochet/1000)*6
+        local ease = 'cubeInOut'
+        doTweenX('0x', 'strumOffset0', -112 * 3, time, ease)
+        doTweenX('1x', 'strumOffset1', -112 * 1, time, ease)
+        doTweenX('2x', 'strumOffset2', -112 * -1, time, ease)
+        doTweenX('3x', 'strumOffset3', -112 * -3, time, ease)
+        doTweenX('4x', 'strumOffset4', -112 * 3, time, ease)
+        doTweenX('5x', 'strumOffset5', -112 * 1, time, ease)
+        doTweenX('6x', 'strumOffset6', -112 * -1, time, ease)
+        doTweenX('7x', 'strumOffset7', -112 * -3, time, ease) 
+        --triggerEvent('flip',''..(stepCrochet/1000)*3, 'cubeInOut')
+    elseif curStep == 864 then 
+        doTweenX('speen', 'noteRot', 360, (stepCrochet/1000)*6, 'cubeInOut') 
+        triggerEvent('resetX',''..(stepCrochet/1000)*6, 'cubeInOut')
+    elseif curStep == 832+64 then 
+        doTweenX('speen', 'noteRot', 180, (stepCrochet/1000)*6, 'cubeInOut') 
+        --triggerEvent('flip',''..(stepCrochet/1000)*3, 'cubeInOut')
+        local time = (stepCrochet/1000)*6
+        local ease = 'cubeInOut'
+        doTweenX('0x', 'strumOffset0', -112 * 3, time, ease)
+        doTweenX('1x', 'strumOffset1', -112 * 1, time, ease)
+        doTweenX('2x', 'strumOffset2', -112 * -1, time, ease)
+        doTweenX('3x', 'strumOffset3', -112 * -3, time, ease)
+        doTweenX('4x', 'strumOffset4', -112 * 3, time, ease)
+        doTweenX('5x', 'strumOffset5', -112 * 1, time, ease)
+        doTweenX('6x', 'strumOffset6', -112 * -1, time, ease)
+        doTweenX('7x', 'strumOffset7', -112 * -3, time, ease) 
+    elseif curStep == 864+64 then 
+        doTweenX('speen', 'noteRot', 0, (stepCrochet/1000)*6, 'cubeInOut') 
+        triggerEvent('resetX',''..(stepCrochet/1000)*6, 'cubeInOut')
+    elseif curStep == 1840 then 
+        if not middlescroll then 
+            doTweenX('playerStrumOffset', 'playerStrumOffset', -160, (stepCrochet/1000)*3, 'cubeInOut') 
+            doTweenX('opponentStrumOffset', 'opponentStrumOffset', 160, (stepCrochet/1000)*3, 'cubeInOut') 
+        else
+           
+        end
+
+    elseif curStep == 1848 then 
+        if not middlescroll then 
+            doTweenX('playerStrumOffset', 'playerStrumOffset', -320, (stepCrochet/1000)*3, 'cubeInOut') 
+            doTweenX('opponentStrumOffset', 'opponentStrumOffset', 320, (stepCrochet/1000)*3, 'cubeInOut') 
+        else 
+           
+        end
+
+    elseif curStep == 784 then 
+        --triggerEvent('setTimeStop', '64050', '68640')
+    elseif curStep == 944 then 
+        --triggerEvent('setTimeStop', '92370', '92890')
+    end
+
+    for i = 0,#woap-1 do --reads a list of steps from the array
+        if curStep == woap[i+1] then 
+
+            for j = 0,7 do 
+                local ang = 360 
+                if j % 4 >= 2 then 
+                    ang = -360
+                end
+                setProperty('noteRot'..j..'.x', ang)
+                doTweenX('speen'..j, 'noteRot'..j, 0, stepCrochet/150, 'cubeOut')
+            end
+            setProperty('scale.x', 1)
+            doTweenX('scale', 'scale', 0.7, stepCrochet/150, 'cubeOut')
+        end
+    end
+    --]]
+    
+    --add events and stuff here
+
+
+
 end
 
-
+function introBuzz()
+    if curStep < 192 then 
+        if curStep % 16 == 0 or curStep % 16 == 6 then 
+            if getProperty('confusion'..startMoveThing..'.angle') == 180 then 
+                setProperty('confusion'..startMoveThing..'.angle', 0)
+                --setProperty('strumOffset'..startMoveThing..'.angle', 0)
+            else 
+                setProperty('confusion'..startMoveThing..'.angle', 180)
+                --setProperty('strumOffset'..startMoveThing..'.angle', -100)
+            end
+            
+            --doTweenAngle('confusion'..startMoveThing, 'confusion'..startMoveThing, 0, (stepCrochet/1000)*3, 'cubeInOut')
+            startMoveThing = (startMoveThing + 1) % 8
+        end
+    end
+end
 local frozen = false
 function onEvent(tag, val1, val2)
 	if tag == 'Toggle BG Freeze' then 
 		frozen = not frozen
-		if frozen then
-			if not lowQuality then 
-				setProperty('theBackBops.animation.curAnim.frameRate', 0)
-				setProperty('theMidBops.animation.curAnim.frameRate', 0)
-				setProperty('theFrontBops.animation.curAnim.frameRate', 0)
-				
-			end
-			runHaxeCode([[
-				game.variables['desaturation'].saturation = -0.45;
-				game.variables['desaturation'].brightness = -0.4;
-				game.variables['desaturationDarker'].saturation = -0.45;
-				game.variables['desaturationDarker'].brightness = -0.49;
-			]])
-
-
-			characterPlayAnim('gf', 'chasam', true)
-			setProperty('gf.specialAnim', true)
-		else
-			if not lowQuality then 
-			--setProperty('defaultCamZoom', 0.62)
-			setProperty('theBackBops.animation.curAnim.frameRate', 24)
-			setProperty('theMidBops.animation.curAnim.frameRate', 24)
-			setProperty('theFrontBops.animation.curAnim.frameRate', 24)
-			end
-			runHaxeCode([[
-				game.variables['desaturation'].saturation = 0;
-				game.variables['desaturation'].brightness = 0;
-				game.variables['desaturationDarker'].saturation = 0;
-				game.variables['desaturationDarker'].brightness = 0;
-			]])
-
-			
-			setProperty('gf.specialAnim', false)
-			characterDance('gf')
-		end
 	end
+end
+local xOffsetShit = {-100.0, 0.0, 0.0, 100.0}
+local yOffsetShit = {0.0, 100.0, -100.0, 0.0}
+local trailCount = 0
+function goodNoteHit(id, ndata, ntype, isSus)
+    --luaDebugMode = true
+    if frozen and not isSus then --trails lol
+        makeLuaSpriteCopy('trail'..trailCount, 'boyfriend', getProperty('boyfriend.x'), getProperty('boyfriend.y'))
+        --setProperty('trail'..trailCount..'.alpha', 0.6)
+        addLuaSprite('trail'..trailCount, true)
+        setObjectOrder('trail'..trailCount, getObjectOrder('boyfriendGroup'))
+        doTweenAlpha('trail'..trailCount, 'trail'..trailCount, 0, crochet*0.001*4, 'cubeOut')
+        doTweenX('trailscalex'..trailCount, 'trail'..trailCount..'.scale', 1.2, crochet*0.001*4, 'cubeIn')
+        doTweenY('trailscaley'..trailCount, 'trail'..trailCount..'.scale', 1.2, crochet*0.001*4, 'cubeIn')
+        doTweenX('trailx'..trailCount, 'trail'..trailCount, getProperty('boyfriend.x')+xOffsetShit[ndata+1], crochet*0.001*4, 'cubeOut')
+        doTweenY('traily'..trailCount, 'trail'..trailCount, getProperty('boyfriend.y')+yOffsetShit[ndata+1], crochet*0.001*4, 'cubeOut')
+
+        doTweenColor('trailcol'..trailCount, 'trail'..trailCount, '0xFF2A93E2', 0.001, 'linear')
+        trailCount = trailCount + 1 
+        if trailCount > 25 then 
+            trailCount = 0
+        end
+    end
+end
+function opponentNoteHit(id, ndata, ntype, isSus)
+    if frozen and not isSus then 
+        makeLuaSpriteCopy('trail'..trailCount, 'dad', getProperty('dad.x'), getProperty('dad.y'))
+        --setProperty('trail'..trailCount..'.alpha', 0.8)
+        addLuaSprite('trail'..trailCount, true)
+        setObjectOrder('trail'..trailCount, getObjectOrder('dadGroup'))
+        doTweenAlpha('trail'..trailCount, 'trail'..trailCount, 0, crochet*0.001*4, 'cubeOut')
+        doTweenX('trailscalex'..trailCount, 'trail'..trailCount..'.scale', 1.2, crochet*0.001*4, 'cubeIn')
+        doTweenY('trailscaley'..trailCount, 'trail'..trailCount..'.scale', 1.2, crochet*0.001*4, 'cubeIn')
+
+        doTweenX('trailx'..trailCount, 'trail'..trailCount, getProperty('dad.x')+xOffsetShit[ndata+1], crochet*0.001*4, 'cubeOut')
+        doTweenY('traily'..trailCount, 'trail'..trailCount, getProperty('dad.y')+yOffsetShit[ndata+1], crochet*0.001*4, 'cubeOut')
+
+        doTweenColor('trailcol'..trailCount, 'trail'..trailCount, '0xFFFF0000', 0.001, 'linear')
+        trailCount = trailCount + 1 
+        if trailCount > 25 then 
+            trailCount = 0
+        end
+    end
 end
