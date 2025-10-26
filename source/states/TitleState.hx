@@ -244,9 +244,8 @@ class TitleState extends MusicBeatState
 					enterPosition.set(titleJSON.startx, titleJSON.starty);
 					musicBPM = titleJSON.bpm;
 					
-					if(titleJSON.animation != null && titleJSON.animation.length > 0) animationName = titleJSON.animation;
-					if(titleJSON.animation != null && titleJSON.animation.length > 0) animationName2 = titleJSON.animation;
-					if(titleJSON.dance_left != null && titleJSON.dance_left.length > 0) danceLeftFrames = titleJSON.dance_left;
+					if(titleJSON.animation != null && titleJSON.animation.length > 0) animationName && animationName2 = titleJSON.animation;
+=					if(titleJSON.dance_left != null && titleJSON.dance_left.length > 0) danceLeftFrames = titleJSON.dance_left;
 					if(titleJSON.dance_right != null && titleJSON.dance_right.length > 0) danceRightFrames = titleJSON.dance_right;
 					useIdle = (titleJSON.idle == true);
 	
@@ -257,7 +256,7 @@ class TitleState extends MusicBeatState
 						add(bg);
 					}
 				}
-				catch(e:haxe.Exception)
+				catch(e:haxe.Exception)=
 				{
 					trace('[WARN] Title JSON might broken, ignoring issue...\n${e.details()}');
 				}
