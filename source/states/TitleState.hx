@@ -112,7 +112,8 @@ class TitleState extends MusicBeatState
 	}
 
 	var logoBl:FlxSprite;
-	var gfDance:FlxSprite;
+	var bfDance:FlxSprite;
+	var ronDance:FlxSprite;
 	var danceLeft:Bool = false;
 	var titleText:FlxSprite;
 	var swagShader:ColorSwap = null;
@@ -135,28 +136,27 @@ class TitleState extends MusicBeatState
 		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
 
-		gfDance = new FlxSprite(gfPosition.x, gfPosition.y);
-		gfDance.antialiasing = ClientPrefs.data.antialiasing;
+		bfDance = new FlxSprite(gfPosition.x, gfPosition.y);
+		bfDance.antialiasing = ClientPrefs.data.antialiasing;
+		
+		ronDance = new FlxSprite(gfPosition.x, gfPosition.y);
+		ronDance.antialiasing = ClientPrefs.data.antialiasing;
 		
 		if(ClientPrefs.data.shaders)
 		{
 			swagShader = new ColorSwap();
-			gfDance.shader = swagShader.shader;
+			bfDance.shader = swagShader.shader;	
+			ronDance.shader = swagShader.shader;
 			logoBl.shader = swagShader.shader;
 		}
 		
-		gfDance.frames = Paths.getSparrowAtlas(characterImage);
-		if(!useIdle)
-		{
-			gfDance.animation.addByIndices('danceLeft', animationName, danceLeftFrames, "", 24, false);
-			gfDance.animation.addByIndices('danceRight', animationName, danceRightFrames, "", 24, false);
-			gfDance.animation.play('danceRight');
-		}
-		else
-		{
-			gfDance.animation.addByPrefix('idle', animationName, 24, false);
-			gfDance.animation.play('idle');
-		}
+		bfDance.frames = Paths.getSparrowAtlas(characterImage);
+		bfDance.animation.addByPrefix('idle', animationName, 24, false);
+		bfDance.animation.play('idle');
+		
+		ronDance.frames = Paths.getSparrowAtlas(characterImage2);
+		ronDance.animation.addByPrefix('idle', animationName2, 24, false);
+		ronDance.animation.play('idle');
 
 
 		var animFrames:Array<FlxFrame> = [];
@@ -197,7 +197,7 @@ class TitleState extends MusicBeatState
 		ngSpr.screenCenter(X);
 		ngSpr.antialiasing = ClientPrefs.data.antialiasing;
 
-		add(gfDance);
+		add(bfDance);
 		add(logoBl); //FNF Logo
 		add(titleText); //"Press Enter to Begin" text
 		add(credGroup);
@@ -212,34 +212,40 @@ class TitleState extends MusicBeatState
 	}
 
 	// JSON data
-	var characterImage:String = 'gfDanceTitle';
-	var animationName:String = 'gfDance';
+	var characterImage:String = 'bf_title_bop';
+	var animationName:String = 'Bf Dancing Beat';
 
+	var characterImage2:String = 'ron_title_bop';
+	var animationName2:String = 'Ron Dancing Beat';
+	
 	var gfPosition:FlxPoint = FlxPoint.get(512, 40);
 	var logoPosition:FlxPoint = FlxPoint.get(-150, -100);
 	var enterPosition:FlxPoint = FlxPoint.get(100, 576);
 	
 	var useIdle:Bool = false;
 	var musicBPM:Float = 102;
-	var danceLeftFrames:Array<Int> = [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29];
-	var danceRightFrames:Array<Int> = [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+	var danceLeftFrames:Array<Int> = [];
+	var danceRightFrames:Array<Int> = [];
 
 	function loadJsonData()
 	{
-		if(Paths.fileExists('images/gfDanceTitle.json', TEXT))
+		if(Paths.fileExists('images/bfDanceTitle.json', TEXT))
 		{
-			var titleRaw:String = Paths.getTextFromFile('images/gfDanceTitle.json');
+			var titleRaw:String = Paths.getTextFromFile('images/bf_title_bop.json');
+			var titleRaw2:String = Paths.getTextFromFile('images/ron_title_bop.json');
 			if(titleRaw != null && titleRaw.length > 0)
 			{
 				try
 				{
-					var titleJSON:TitleData = tjson.TJSON.parse(titleRaw);
+					var titleJSON:TitleData = tjson.TJSON.parse(titleRaw);{
+					var titleJSON2:TitleData = tjson.TJSON.parse(titleRaw2);
 					gfPosition.set(titleJSON.gfx, titleJSON.gfy);
 					logoPosition.set(titleJSON.titlex, titleJSON.titley);
 					enterPosition.set(titleJSON.startx, titleJSON.starty);
 					musicBPM = titleJSON.bpm;
 					
 					if(titleJSON.animation != null && titleJSON.animation.length > 0) animationName = titleJSON.animation;
+					if(titleJSON.animation != null && titleJSON.animation.length > 0) animationName2 = titleJSON.animation;
 					if(titleJSON.dance_left != null && titleJSON.dance_left.length > 0) danceLeftFrames = titleJSON.dance_left;
 					if(titleJSON.dance_right != null && titleJSON.dance_right.length > 0) danceRightFrames = titleJSON.dance_right;
 					useIdle = (titleJSON.idle == true);
@@ -504,17 +510,17 @@ class TitleState extends MusicBeatState
 		if(logoBl != null)
 			logoBl.animation.play('bump', true);
 
-		if(gfDance != null)
+		if(bfDance != null)
 		{
 			danceLeft = !danceLeft;
 			if(!useIdle)
 			{
 				if (danceLeft)
-					gfDance.animation.play('danceRight');
+					bfDance.animation.play('danceRight');
 				else
-					gfDance.animation.play('danceLeft');
+					bfDance.animation.play('danceLeft');
 			}
-			else if(curBeat % 2 == 0) gfDance.animation.play('idle', true);
+			else if(curBeat % 2 == 0) bfDance.animation.play('idle', true);
 		}
 
 		if(!closedState)
